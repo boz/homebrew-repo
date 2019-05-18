@@ -2,9 +2,9 @@
 class Kail < Formula
   desc "kubernetes tail - pod log viewer"
   homepage "https://github.com/boz/kail"
-  url "https://github.com/boz/kail/releases/download/v0.10.0/kail_0.10.0_darwin_amd64.tar.gz"
-  version "0.10.0"
-  sha256 "eb68816ae5e3fb77593649b1c698b3012f3eff415df51b41c8595e3ba4f5d78a"
+  url "https://github.com/boz/kail/releases/download/v0.10.1/kail_0.10.1_darwin_amd64.tar.gz"
+  version "0.10.1"
+  sha256 "c0539d100c0c72ac88340976df7c3dd96febfcced7cf6cc5272b61a5ea514506"
 
   def install
     bin.install "kail"
