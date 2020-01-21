@@ -2,16 +2,16 @@
 class Kail < Formula
   desc "kubernetes tail - pod log viewer"
   homepage "https://github.com/boz/kail"
-  version "0.12.0"
+  version "0.13.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/boz/kail/releases/download/v0.12.0/kail_0.12.0_darwin_amd64.tar.gz"
-    sha256 "94e7ead8378abbf862224515734665a065b561cf4d9a41e3463c56c6f0990da1"
+    url "https://github.com/boz/kail/releases/download/v0.13.0/kail_0.13.0_darwin_amd64.tar.gz"
+    sha256 "83db36c7e36a16fa45855003076891b69310e649e0bc8341718f91a0396a7e7c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/boz/kail/releases/download/v0.12.0/kail_0.12.0_linux_amd64.tar.gz"
-      sha256 "5dd3ab7ea087a995acf0990014d42d18caea5162ebbabcfb817e937480f1a329"
+      url "https://github.com/boz/kail/releases/download/v0.13.0/kail_0.13.0_linux_amd64.tar.gz"
+      sha256 "8d334e4823dc528609f4e280572c7d9bb9612ff3467047b719988d3b6e48463c"
     end
   end
 
