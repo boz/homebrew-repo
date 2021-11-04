@@ -3,7 +3,6 @@ class Kail < Formula
   desc "kubernetes tail - pod log viewer"
   homepage "https://github.com/boz/kail"
   version "0.15.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/boz/kail/releases/download/v0.15.0/kail_0.15.0_darwin_amd64.tar.gz"
