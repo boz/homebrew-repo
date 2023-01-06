@@ -5,20 +5,20 @@
 class Kail < Formula
   desc "kubernetes tail - pod log viewer"
   homepage "https://github.com/boz/kail"
-  version "0.16.0"
+  version "0.16.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/boz/kail/releases/download/v0.16.0/kail_v0.16.0_darwin_arm64.tar.gz"
-      sha256 "50962bd04e34e9c76b2e298a9cb0b479348e8665bd94ea709ed2b4ea935d2304"
+      url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_darwin_arm64.tar.gz"
+      sha256 "fead2e4a26a59fce275acdce3438d9bdfbfa4d16c401ae0ec2d2ab3bb8e20d7f"
 
       def install
         bin.install "kail"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/boz/kail/releases/download/v0.16.0/kail_v0.16.0_darwin_amd64v2.tar.gz"
-      sha256 "64f2e2d0f9135ecf304059286bc63d92cd9d78a5926d3cdb0155c5322c43c80b"
+      url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_darwin_amd64v2.tar.gz"
+      sha256 "04e1c71c8608d71658b59668a57e5c4c432d4685b0365e6fd8b111ab83c45049"
 
       def install
         bin.install "kail"
@@ -28,16 +28,16 @@ class Kail < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boz/kail/releases/download/v0.16.0/kail_v0.16.0_linux_arm64.tar.gz"
-      sha256 "22e562c5cbf83d9ddef35a18b0ea499a7bb633bb4c715055d650b36efe6a5b8a"
+      url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_linux_arm64.tar.gz"
+      sha256 "5eb3b24379c526c3e9bb238cfca6a1905a0d808c5e3efb88c3a03d28331aabf8"
 
       def install
         bin.install "kail"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/boz/kail/releases/download/v0.16.0/kail_v0.16.0_linux_amd64v2.tar.gz"
-      sha256 "7c2d5d3a18035b73f518e2858a286d75223389deb709d78d3c6da7bb242d9933"
+      url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_linux_amd64v2.tar.gz"
+      sha256 "fa32e175fbb1db101aef4c2a146f9c11ab3b94200edf786760b7b62a7376b673"
 
       def install
         bin.install "kail"
