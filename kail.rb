@@ -10,7 +10,7 @@ class Kail < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_darwin_arm64.tar.gz"
-      sha256 "fead2e4a26a59fce275acdce3438d9bdfbfa4d16c401ae0ec2d2ab3bb8e20d7f"
+      sha256 "53bd81efe1c85d51d3688d7b0575fba458d75954895ca50d211ff31e5ca9f5a0"
 
       def install
         bin.install "kail"
@@ -18,7 +18,7 @@ class Kail < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_darwin_amd64v2.tar.gz"
-      sha256 "04e1c71c8608d71658b59668a57e5c4c432d4685b0365e6fd8b111ab83c45049"
+      sha256 "ae27bdcdeaa665dc8eec4cf7a43e5b7626ed6b1a3b731af7200a39b71a8a3702"
 
       def install
         bin.install "kail"
@@ -29,7 +29,7 @@ class Kail < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_linux_arm64.tar.gz"
-      sha256 "5eb3b24379c526c3e9bb238cfca6a1905a0d808c5e3efb88c3a03d28331aabf8"
+      sha256 "94cb35d36df996dacc4b97de24fa3513674c73e6b46fb92f9ebdb7d0271a76f1"
 
       def install
         bin.install "kail"
@@ -37,7 +37,7 @@ class Kail < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/boz/kail/releases/download/v0.16.1/kail_v0.16.1_linux_amd64v2.tar.gz"
-      sha256 "fa32e175fbb1db101aef4c2a146f9c11ab3b94200edf786760b7b62a7376b673"
+      sha256 "0f71b59b7eb9df05694e0e3ada17609f9d6276cbc4de197df3e200c9cab47842"
 
       def install
         bin.install "kail"
